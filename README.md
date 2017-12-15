@@ -1,244 +1,36 @@
-# Clean Blog Hexo
+# [Start Bootstrap](http://startbootstrap.com/) - [SB Admin 2](http://startbootstrap.com/template-overviews/sb-admin-2/)
+[![CDNJS](https://img.shields.io/cdnjs/v/startbootstrap-sb-admin-2.svg)](https://cdnjs.com/libraries/startbootstrap-sb-admin-2)
 
-![](http://www.codeblocq.com/img/hexo-theme-thumbnail/CleanBlog.png)
+[SB Admin 2](http://startbootstrap.com/template-overviews/sb-admin-2/) is an open source, admin dashboard template for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
 
-Hexo implementation of [Clean Blog](http://blackrockdigital.github.io/startbootstrap-clean-blog/index.html)
+## Getting Started
 
-Clean blog is a full featured, responsive Hexo theme. [Demo here](http://www.codeblocq.com/assets/projects/hexo-theme-clean-blog/).
+To begin using this template, choose one of the following options to get started:
+* [Download the latest release on Start Bootstrap](http://startbootstrap.com/template-overviews/sb-admin-2/)
+* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-sb-admin-2.git`
+* Fork the repo
 
-## Features
+## Using the Source Files
 
-- Disqus and Facebook comments
-- Google Analytics
-- Addthis
-- Cover image for posts and pages
-- Tags and Categories Support
-- Responsive Images
-- Image Gallery
-- Code syntax highlighting
+After cloning the repo take a look at the `gulpfile.js` and check out the tasks available:
+* `gulp` The default task will compile the LESS and JS into the `dist` directory and minify the output, and it will copy all vendor libraries from `bower_components` into the `vendor` directory
+* `gulp dev` The dev task will serve up a local version of the template and will watch the LESS, JS, and HTML files for changes and reload the browser windo automatically
 
-## External libraries used
+To update dependencies, run `bower update` and then run `gulp copy` to copy the updated dependencies into the `vendor` directory
 
-- [Bootstrap](http://getbootstrap.com/css/)
-- [FeatherLight.js](http://noelboss.github.io/featherlight/) (Gallery)
-- [jQuery](https://jquery.com/)
+## Bugs and Issues
 
-## Installation
-
-```
-$ git clone https://github.com/klugjo/hexo-theme-clean-blog.git themes/clean-blog
-```
-
-Then update your blog's main `_config.yml` to set the theme to `clean-blog`:
-
-```
-# Extensions
-## Plugins: http://hexo.io/plugins/
-## Themes: http://hexo.io/themes/
-theme: clean-blog
-```
-
-## Configuration
-
-### Menu
-
-The menu is configured in the theme's `_config.yml`.
-
-```
-# Header
-menu:
-  Home: /
-  Archives: /archives
-  Github:
-    url: https://github.com/klugjo/hexo-theme-clean-blog
-    icon: github
-```
-
-The object key is the label and the value is the path, or you can use a icon (font awesome) like menu item.
-
-### Top Left Label
-
-The top left label is configured in the theme's `_config.yml`. When clicked it will lead to the Home Page.
-
-```
-# Title on top left of menu. Leave empty to use main blog title
-menu_title: Configurable Title
-```
-
-### Home Page cover image
-
-The Home Page cover is configured in the theme's `_config.yml`. It will be the same for all index type pages.
-
-```
-# URL of the Home page image
-index_cover: /img/home-bg.jpg
-```
-
-### Default post title
-
-The default post title (used when no title is specified) is configured in the theme's `_config.yml`.
-
-```
-# Default post title
-default_post_title: Untitled
-```
-
-### Comments
-
-The comments provider is specified in the theme's `_config.yml`. If you specify both a `disqus_shortname` and a `facebook.appid` there will be 2 sets of comment per post. So choose one.
-
-```
-# Comments. Choose one by filling up the information
-comments:
-  # Disqus comments
-  disqus_shortname: klugjotest
-  # Facebook comments
-  facebook:
-    appid: 123456789012345
-    comment_count: 5
-    comment_colorscheme: light
-```
-
-You can too hide the comment in the posts front-matter:
-
-```
-comment: false
----
-```
-
-### Google Analytics
-
-The Google Analytics Tracking ID is configured in the theme's `_config.yml`.
-
-```
-# Google Analytics Tracking ID
-google_analytics:
-```
-
-### Addthis
-
-The Addthis ID is configured in the theme's `_config.yml`.
-
-```
-# Addthis ID
-addthis:
-```
-
-### Social Account
-
-Setup the links to your social pages in the theme's `_config.yml`. Links are in the footer.
-
-```
-# Social Accounts
-twitter_url:
-facebook_url:
-github_url: https://github.com/klugjo/hexo-theme-clean-blog
-linkedin_url:
-mailto:
-```
-
-### Author
-
-The post's author is specified in the posts front-matter:
-
-```
-author: Klug Jo
----
-```
-
-### Post's Cover Image
-
-By default, posts will use the home page cover image. You can specify a custom cover in the front-matter:
-
-```
-title: Excerpts
-date: 2013-12-25 00:23:23
-tags: ["Excertps"]
-cover: /assets/contact-bg.jpg
----
-```
-
-### Post's Share Cover Image
-
-You can specify a custom cover to share yours posts in social medias:
-
-```
-share_cover: /assets/contact-bg.jpg
----
-```
-
-### Post's Excerpt
-
-This theme does not support traditional excerpts. To show excerpts on the index page, use `subtitle` in the front-matter:
-
-```
-title: Excerpts
-date: 2013-12-25 00:23:23
-tags: ["Excertps"]
-subtitle: Standard Excerpts are not supported in Clean Blog but you can use subtitles in the front matter to display text in the index.
----
-
-```
-
-## Tags page.
-
-> Follow these steps to add a `tags` page that contains all the tags in your site.
-
-- Create a page named `tags`
-
-```
-$ hexo new page "tags"
-```
-
-- Edit the newly created page and set page type to `tags` in the front matter.
-
-```
-title: All tags
-type: "tags"
-```
-
-- Add `tags` to the menu in the theme `_config.yml`:
-
-```
-# Header
-menu:
-  Home: /
-  Archives: /archives
-  Tags: /tags
-```
-
-## Categories page.
-
-> Follow these steps to add a `categories` page that contains all the categories in your site.
-
-- Create a page named `categories`
-
-```
-$ hexo new page "categories"
-```
-
-- Edit the newly created page and set page type to `categories` in the front matter.
-
-```
-title: All tags
-type: "categories"
-```
-
-- Add `Categories` to the menu in the theme `_config.yml`:
-
-```
-# Header
-menu:
-  Home: /
-  Archives: /archives
-  Categories: /categories
-```
-
+Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-sb-admin-2/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/sb-admin-2/).
 
 ## Creator
 
-This theme was created by [Blackrock Digital](https://github.com/BlackrockDigital) and adapted for Hexo by [Jonathan Klughertz](http://www.codeblocq.com/).
+Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
 
-## License
+* https://twitter.com/davidmillerskt
+* https://github.com/davidtmiller
 
-MIT
+Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
+
+## Copyright and License
+
+Copyright 2013-2016 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-sb-admin-2/blob/gh-pages/LICENSE) license.
