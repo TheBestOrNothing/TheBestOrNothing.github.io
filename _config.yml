@@ -44,3 +44,8 @@ github_url: https://github.com/klugjo/hexo-theme-clean-blog
 gitlab_url:
 linkedin_url:
 mailto:
+
+# Extensions
+# ## Plugins: http://hexo.io/plugins/
+# ## Themes: http://hexo.io/themes/
+theme: clean-blog
