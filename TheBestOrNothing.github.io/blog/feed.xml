@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Docusaurus Blog</title>
+        <link>https://TheBestOrNothing.github.io/blog</link>
+        <description>The best place to stay up-to-date with the latest Docusaurus news and events.</description>
+        <lastBuildDate>Thu, 14 Dec 2017 06:00:00 GMT</lastBuildDate>
+        <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+        <generator>Feed for Node.js</generator>
+        <image>
+            <title>Docusaurus Blog</title>
+            <url>https://TheBestOrNothing.github.ioimg/docusaurus.svg</url>
+            <link>https://TheBestOrNothing.github.io/blog</link>
+        </image>
+        <copyright>Copyright © 2017 Facebook Inc.</copyright>
+        <item>
+            <title><![CDATA[Introducing Docusaurus]]></title>
+            <link>https://TheBestOrNothing.github.io/blog/2017/12/14/introducing-docusaurus.html</link>
+            <guid>https://TheBestOrNothing.github.io/blog/2017/12/14/introducing-docusaurus.html</guid>
+            <pubDate>Thu, 14 Dec 2017 06:00:00 GMT</pubDate>
+            <description><![CDATA[
+![](/img/slash-introducing.png)
+
+We are very happy to introduce [Docusaurus](https://github.com/facebook/Docusaurus) to help you manage one or many open source websites.
+
+We created [Docusaurus](https://docusaurus.io) for the following reasons:
+
+1. To put the focus on writing good documentation instead of worrying about the infrastructure of a website.
+1. To provide features that many of our open source websites need like blog support, search and versioning.
+1. To make it easy to push updates, new features, and bug fixes to everyone all at once.
+1. And, finally, to provide a consistent look and feel across our all our open source projects.
+
+]]></description>
+        </item>
+        <item>
+            <title><![CDATA[New Version 1.0.0]]></title>
+            <link>https://TheBestOrNothing.github.io/blog/2017/10/24/new-version-1.0.0.html</link>
+            <guid>https://TheBestOrNothing.github.io/blog/2017/10/24/new-version-1.0.0.html</guid>
+            <pubDate>Tue, 24 Oct 2017 06:00:00 GMT</pubDate>
+            <description><![CDATA[This blog post will test file name parsing issues when periods are present.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Adding RSS Support]]></title>
+            <link>https://TheBestOrNothing.github.io/blog/2017/09/26/adding-rss.html</link>
+            <guid>https://TheBestOrNothing.github.io/blog/2017/09/26/adding-rss.html</guid>
+            <pubDate>Tue, 26 Sep 2017 06:00:00 GMT</pubDate>
+            <description><![CDATA[This is a test post.
+
+A whole bunch of other information.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Adding RSS Support - RSS Truncation Test]]></title>
+            <link>https://TheBestOrNothing.github.io/blog/2017/09/25/testing-rss.html</link>
+            <guid>https://TheBestOrNothing.github.io/blog/2017/09/25/testing-rss.html</guid>
+            <pubDate>Mon, 25 Sep 2017 06:00:00 GMT</pubDate>
+            <description><![CDATA[1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890
+
+This should be truncated.
+]]></description>
+        </item>
+        <item>
+            <title><![CDATA[New Blog Post]]></title>
+            <link>https://TheBestOrNothing.github.io/blog/2017/04/10/blog-post-two.html</link>
+            <guid>https://TheBestOrNothing.github.io/blog/2017/04/10/blog-post-two.html</guid>
+            <pubDate>Mon, 10 Apr 2017 06:00:00 GMT</pubDate>
+            <description><![CDATA[
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum massa eget nulla aliquet sagittis. Proin odio tortor, vulputate ut odio in, ultrices ultricies augue. Cras ornare ultrices lorem malesuada iaculis. Etiam sit amet libero tempor, pulvinar mauris sed, sollicitudin sapien.
+
+]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Blog Title]]></title>
+            <link>https://TheBestOrNothing.github.io/blog/2016/03/11/blog-post.html</link>
+            <guid>https://TheBestOrNothing.github.io/blog/2016/03/11/blog-post.html</guid>
+            <pubDate>Fri, 11 Mar 2016 06:00:00 GMT</pubDate>
+            <description><![CDATA[
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum massa eget nulla aliquet sagittis. Proin odio tortor, vulputate ut odio in, ultrices ultricies augue. Cras ornare ultrices lorem malesuada iaculis. Etiam sit amet libero tempor, pulvinar mauris sed, sollicitudin sapien.
+
+]]></description>
+        </item>
+    </channel>
+</rss>
