@@ -1,37 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
     <channel>
-        <title>Docusaurus Blog</title>
+        <title>Test Site Blog</title>
         <link>https://TheBestOrNothing.github.io/blog</link>
-        <description>The best place to stay up-to-date with the latest Docusaurus news and events.</description>
-        <lastBuildDate>Thu, 14 Dec 2017 06:00:00 GMT</lastBuildDate>
+        <description>The best place to stay up-to-date with the latest Test Site news and events.</description>
+        <lastBuildDate>Tue, 24 Oct 2017 06:00:00 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>Feed for Node.js</generator>
         <image>
-            <title>Docusaurus Blog</title>
+            <title>Test Site Blog</title>
             <url>https://TheBestOrNothing.github.ioimg/docusaurus.svg</url>
             <link>https://TheBestOrNothing.github.io/blog</link>
         </image>
-        <copyright>Copyright © 2017 Facebook Inc.</copyright>
-        <item>
-            <title><![CDATA[Introducing Docusaurus]]></title>
-            <link>https://TheBestOrNothing.github.io/blog/2017/12/14/introducing-docusaurus.html</link>
-            <guid>https://TheBestOrNothing.github.io/blog/2017/12/14/introducing-docusaurus.html</guid>
-            <pubDate>Thu, 14 Dec 2017 06:00:00 GMT</pubDate>
-            <description><![CDATA[
-![](/img/slash-introducing.png)
-
-We are very happy to introduce [Docusaurus](https://github.com/facebook/Docusaurus) to help you manage one or many open source websites.
-
-We created [Docusaurus](https://docusaurus.io) for the following reasons:
-
-1. To put the focus on writing good documentation instead of worrying about the infrastructure of a website.
-1. To provide features that many of our open source websites need like blog support, search and versioning.
-1. To make it easy to push updates, new features, and bug fixes to everyone all at once.
-1. And, finally, to provide a consistent look and feel across our all our open source projects.
-
-]]></description>
-        </item>
+        <copyright>Copyright © 2017 Your Name or Your Company Name</copyright>
         <item>
             <title><![CDATA[New Version 1.0.0]]></title>
             <link>https://TheBestOrNothing.github.io/blog/2017/10/24/new-version-1.0.0.html</link>
