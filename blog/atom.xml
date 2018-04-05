@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://TheBestOrNothing.github.io/blog</id>
-    <title>Docusaurus Blog</title>
+    <title>Majority Attack Blog</title>
     <updated>2017-12-14T06:00:00Z</updated>
     <generator>Feed for Node.js</generator>
     <link rel="alternate" href="https://TheBestOrNothing.github.io/blog"/>
-    <subtitle>The best place to stay up-to-date with the latest Docusaurus news and events.</subtitle>
+    <subtitle>The best place to stay up-to-date with the latest Majority Attack news and events.</subtitle>
     <logo>https://TheBestOrNothing.github.io/img/51.svg</logo>
     <rights>Copyright © 2018 Facebook Inc.</rights>
     <entry>

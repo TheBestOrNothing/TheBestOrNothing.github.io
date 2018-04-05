@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
     <channel>
-        <title>Docusaurus Blog</title>
+        <title>Majority Attack Blog</title>
         <link>https://TheBestOrNothing.github.io/blog</link>
-        <description>The best place to stay up-to-date with the latest Docusaurus news and events.</description>
+        <description>The best place to stay up-to-date with the latest Majority Attack news and events.</description>
         <lastBuildDate>Thu, 14 Dec 2017 06:00:00 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>Feed for Node.js</generator>
         <image>
-            <title>Docusaurus Blog</title>
+            <title>Majority Attack Blog</title>
             <url>https://TheBestOrNothing.github.io/img/51.svg</url>
             <link>https://TheBestOrNothing.github.io/blog</link>
         </image>
