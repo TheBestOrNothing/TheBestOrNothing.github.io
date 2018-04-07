@@ -1,0 +1,87 @@
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Adding a Blog · Majority Attack</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta property="og:title" content="Adding a Blog · Majority Attack"/><meta property="og:type" content="website"/><meta property="og:url" content="https://TheBestOrNothing.github.io/index.html"/><meta property="og:description" content="## Initial Setup"/><meta property="og:image" content="https://TheBestOrNothing.github.io/img/blockchain_dark.png"/><link rel="shortcut icon" href="/img/blockchain_dark.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-dark.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/css/main.css"/></head><body class="sideNavVisible doc separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/zh-CN"><img class="logo" src="/img/blockchain_dark.png"/><h2 class="headerTitle">Majority Attack</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/docs/zh-CN/blockchain.html" target="_self">比特币</a></li><li class="siteNavGroupActive"><a href="/docs/zh-CN/installation.html" target="_self">Docusa</a></li><li class=""><a href="/zh-CN/help.html" target="_self">Help</a></li><li class=""><a href="/zh-CN/about-slash.html" target="_self">About /</a></li><span><li><a id="languages-menu" href="#"><img class="languages-icon" src="/img/language.svg"/>English</a><div id="languages-dropdown" class="hide"><ul id="languages-dropdown-items"><li><a href="/zh-CN">中文</a></li><li><a href="/en">English</a></li><li><a href="https://crowdin.com/project/docusaurus" target="_blank">Help Translate</a></li></ul></div></li><script>
+        const languagesMenuItem = document.getElementById("languages-menu");
+        const languagesDropDown = document.getElementById("languages-dropdown");
+        languagesMenuItem.addEventListener("click", function(){
+          if(languagesDropDown.className == "hide") {
+            languagesDropDown.className = "visible";
+          } else {
+            languagesDropDown.className = "hide";
+          }
+        });
+      </script></span></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>Guides</span></h2></div><div class="navGroups"><div class="navGroup navGroupActive"><h3>Getting Started</h3><ul><li class="navListItem"><a class="navItem" href="/docs/zh-CN/installation.html">Installation</a></li><li class="navListItem"><a class="navItem" href="/docs/zh-CN/site-preparation.html">Site Preparation</a></li><li class="navListItem"><a class="navItem" href="/docs/zh-CN/site-creation.html">Creating your site</a></li><li class="navListItem"><a class="navItem" href="/docs/zh-CN/publishing.html">Publishing your site</a></li></ul></div><div class="navGroup navGroupActive"><h3>Guides</h3><ul><li class="navListItem navListItemActive"><a class="navItem navItemActive" href="/docs/zh-CN/blog.html">Adding a Blog</a></li><li class="navListItem"><a class="navItem" href="/docs/zh-CN/custom-pages.html">Custom Pages</a></li><li class="navListItem"><a class="navItem" href="/docs/zh-CN/search.html">Enabling Search</a></li><li class="navListItem"><a class="navItem" href="/docs/zh-CN/navigation.html">Navigation and Sidebars</a></li><li class="navListItem"><a class="navItem" href="/docs/zh-CN/translation.html">Translations &amp; Localization</a></li><li class="navListItem"><a class="navItem" href="/docs/zh-CN/versioning.html">Versioning</a></li></ul></div><div class="navGroup navGroupActive"><h3>API</h3><ul><li class="navListItem"><a class="navItem" href="/docs/zh-CN/commands.html">CLI Commands</a></li><li class="navListItem"><a class="navItem" href="/docs/zh-CN/doc-markdown.html">Markdown Features</a></li><li class="navListItem"><a class="navItem" href="/docs/zh-CN/api-pages.html">Pages and Styles</a></li><li class="navListItem"><a class="navItem" href="/docs/zh-CN/site-config.html">siteConfig.js</a></li></ul></div></div></section></div><script>
+          var toggler = document.getElementById('navToggler');
+          var nav = document.getElementById('docsNav');
+          toggler.onclick = function() {
+            nav.classList.toggle('docsSliderActive');
+          };
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="https://crowdin.com/project/docusaurus/zh-CN" target="_blank">Translate</a><h1>Adding a Blog</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="initial-setup"></a><a href="#initial-setup" aria-hidden="true" class="hash-link" ><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Initial Setup</h2>
+<p>To setup your site's blog, start by creating a <code>blog</code> folder within your repo's <code>website</code> directory.</p>
+<p>Then, add a header link to your blog within <code>siteConfig.js</code>:</p>
+<pre><code class="hljs">headerLinks: [
+    ...
+    {blog: true, label: 'Blog'},
+    ...
+]
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="adding-posts"></a><a href="#adding-posts" aria-hidden="true" class="hash-link" ><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Adding Posts</h2>
+<p>To publish in the blog, create a file within the blog folder with a formatted name of <code>YYYY-MM-DD-My-Blog-Post-Title.md</code>. The post date is extracted from the file name.</p>
+<p>For example, at <code>website/blog/2017-08-18-Introducing-Docusaurus.md</code>:</p>
+<pre><code class="hljs">---
+author: Frank Li
+authorURL: https://twitter.com/foobarbaz
+authorFBID: 503283835
+title: Introducing Docusaurus
+---
+
+Lorem Ipusm..
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="header-options"></a><a href="#header-options" aria-hidden="true" class="hash-link" ><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Header Options</h2>
+<p>The only required field is <code>title</code>; however, we provide options to add author information to your blog post as well.</p>
+<ul>
+<li><code>author</code> - The text label of the author byline.</li>
+<li><code>authorURL</code> - The url associated with the author. This could be a Twitter, GitHub, Facebook account, etc.</li>
+<li><code>authorFBID</code> - The Facebook ID that is used to extract the profile picture.</li>
+<li><code>title</code> - The blog post title.</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="summary-truncation"></a><a href="#summary-truncation" aria-hidden="true" class="hash-link" ><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Summary Truncation</h2>
+<p>Use the <code>&lt;!--truncate--&gt;</code> marker in your blog post to represent what will be shown as the summary when viewing all blog published blog posts. Anything above <code>&lt;!--truncate--&gt;</code> will be part of the summary. For example:</p>
+<pre><code class="hljs">---
+title: Truncation Example
+---
+
+All this will be part of the blog post summary.
+
+Even this.
+
+&lt;!--truncate--&gt;
+
+But anything from here on down will not be.
+
+Not this.
+
+Or this.
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="changing-how-many-blog-posts-show-on-sidebar"></a><a href="#changing-how-many-blog-posts-show-on-sidebar" aria-hidden="true" class="hash-link" ><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Changing How Many Blog Posts Show on Sidebar</h2>
+<p>By default, 5 recent blog posts are shown on the sidebar.</p>
+<p>You can configure a specific amount of blog posts to show by adding a <code>blogSidebarCount</code> setting to your <code>siteConfig.js</code>.</p>
+<p>The available options are an integer representing the number of posts you wish to show or a string with the value 'ALL'.</p>
+<p>Example:</p>
+<pre><code class="hljs">blogSidebarCount: 'ALL'
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="rss-feed"></a><a href="#rss-feed" aria-hidden="true" class="hash-link" ><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>RSS Feed</h2>
+<p>Docusaurus provides a simple RSS feed for your blog posts. Both RSS and Atom feed formats are supported. This data is automatically to your website page's HTML</p>
+<p><head>
+tag.</p></p>
+  <p>
+    A summary of the post's text is provided in the RSS feed up to the <code>&lt;!--truncate--&gt;</code>. If no <code>&lt;!--truncate--&gt;</code> tag is found, then all text up 250 characters are used.
+  </p>
+<p><h2>
+Social Buttons
+</h2></p>
+  <p>
+    If you want Facebook and/or Twitter social buttons at the bottom of your blog posts, set the <code>facebookAppId</code> and/or <code>twitter</code> <a href="api-site-config.md">site configuration</a> options in <code>siteConfig.js</code>.
+  </p></span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="publishing.html">← Publishing your site</a><a class="docs-next button" href="custom-pages.html">Custom Pages →</a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#initial-setup">Initial Setup</a></li><li><a href="#adding-posts">Adding Posts</a></li><li><a href="#header-options">Header Options</a></li><li><a href="#summary-truncation">Summary Truncation</a></li><li><a href="#changing-how-many-blog-posts-show-on-sidebar">Changing How Many Blog Posts Show on Sidebar</a></li><li><a href="#rss-feed">RSS Feed</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/blockchain_dark.png" alt="Majority Attack" width="66" height="58"/></a><div><h5>Docs</h5><a href="
+                /docs/zh-CN/installation.html">Getting Started</a><a href="
+                /docs/zh-CN/versioning.html">Versioning</a><a href="
+                /docs/zh-CN/translation.html">Localization</a><a href="
+                /docs/zh-CN/search.html">Adding Search</a></div><div><h5>Community</h5><a href="/zh-CN/users.html">User Showcase</a><a href="https://twitter.com/docusaurus">Twitter</a></div><div><h5>More</h5><a href="https://github.com/facebook/docusaurus">GitHub</a><a class="github-button" href="https://github.com/TheBestOrNothing/TheBestOrNothing.github.io" data-icon="octicon-star" data-count-href="/TheBestOrNothing/TheBestOrNothing.github.io/stargazers" data-count-api="/repos/TheBestOrNothing/TheBestOrNothing.github.io#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://code.facebook.com/projects/" target="_blank" class="fbOpenSource"><img src="/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright"><span>Copyright © 2018 GongZhe Inc.</span></section></footer></div></body></html>
