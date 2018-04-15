@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://TheBestOrNothing.github.io/blog</id>
-    <title>Majority Attack Blog</title>
+    <title>MajorityAttack Blog</title>
     <updated>2017-12-14T06:00:00Z</updated>
     <generator>Feed for Node.js</generator>
     <link rel="alternate" href="https://TheBestOrNothing.github.io/blog"/>
-    <subtitle>The best place to stay up-to-date with the latest Majority Attack news and events.</subtitle>
+    <subtitle>The best place to stay up-to-date with the latest MajorityAttack news and events.</subtitle>
     <logo>https://TheBestOrNothing.github.io/img/blockchain_dark.png</logo>
     <rights>Copyright © 2018 GongZhe Inc.</rights>
     <entry>
