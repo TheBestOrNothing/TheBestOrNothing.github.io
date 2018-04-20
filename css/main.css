@@ -411,15 +411,13 @@ header h2 {
 }
 
 .projectTitle {
-  margin: 0.7em 0 1.3em;
-
-  font-size: 250%;
+   font-size: 250%;
   line-height: 1em;
   font-weight: 400;
 }
 
 .projectTitle > small {
-  margin: auto;
+  margin: 20px auto;
   width: 60%;
   display: block;
   font-size: 50%;
