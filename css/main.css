@@ -418,7 +418,7 @@ header h2 {
 
 .projectTitle > small {
   margin: auto;
-  max-width: 200px;
+  width: 60%;
   display: block;
   font-size: 50%;
   line-height: 1em;
