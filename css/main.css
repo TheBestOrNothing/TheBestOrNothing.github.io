@@ -411,6 +411,8 @@ header h2 {
 }
 
 .projectTitle {
+  margin: auto;
+  width: 100%;
   font-size: 250%;
   line-height: 1em;
   font-weight: 400;
